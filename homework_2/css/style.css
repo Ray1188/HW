@@ -3,3 +3,15 @@
 write your code here
 
 */
+@media print {
+	.tm-sidebar,
+	#about,
+	.heading,
+	.blocks,
+	section.tm-content-box,
+	#ideas
+	{
+		display:none;
+	}
+	
+}
