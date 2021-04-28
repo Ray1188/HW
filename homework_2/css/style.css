@@ -13,5 +13,49 @@ write your code here
 	{
 		display:none;
 	}
+	body{
+		background-color:white;
+	}
+	.container {
+		display: flex;
+		max-width: 740px;
+		min-height: 100vh;
+		justify-content: center;
+	}
+	.tm-content-box{
+		margin-bottom: 0;
+	}
+	.tm-banner{
+		padding: 0;
+		width: 510px;
+	}
+	.flex-2-col{
+		display: flex;
+       
+	}
+	
+	.flex-2-col img{
+		margin-top: 110px;
+		margin-left: 50px;
+		width: 170px;
+		height:170px;
+	}
+	
+	.padding-medium {
+		padding: 40px 0 0 40px;
+	}
+	p{
+		text-indent:25px;
+		word-wrap: break-all; 
+	
+	}
+	.tm-section-description{
+		width: 270px;
+	}
+	.tm-footer{
+		display: flex;
+		margin-left: 50px;
+		padding-top: 30px;
+	}
 	
 }
