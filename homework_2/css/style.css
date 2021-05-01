@@ -3,8 +3,60 @@
 write your code here
 
 */
-
-
+@media print {
+	.tm-sidebar,
+	#about,
+	.heading,
+	.blocks,
+	section.tm-content-box,
+	#ideas
+	{
+		display:none;
+	}
+	body{
+		background-color:white;
+	}
+	.container {
+		display: flex;
+		max-width: 740px;
+		min-height: 100vh;
+		justify-content: center;
+	}
+	
+	h2.tm-section-title{
+		color: #230fff;
+	}
+	.tm-content-box{
+		margin-bottom: 0;
+	}
+	.tm-banner{
+		padding: 0;
+		width: 510px;
+	}
+	.flex-2-col{
+		display: flex;
+	}
+	
+	.flex-2-col img{
+		margin-top: 70px;
+		margin-left: 50px;
+		width: 175px;
+		height:175px;
+	}
+	
+	.padding-medium {
+		padding: 30px 0 0 30px;
+	}
+	
+	.tm-section-description{
+		width: 270px;
+	}
+	.tm-footer{
+		display: flex;
+		margin-left: 50px;
+		padding-top: 30px;
+	}
+}
 .flex-2-col{
 	display: flex;
     align-items: center;
@@ -65,13 +117,12 @@ ol a:visited{
 }
 ol a:hover{
 	text-decoration-color:  #83d2db;
-	text-underline-offset: 0.5px;
 	text-decoration-style: double;
 	color:#83d2db;
 }
 
 
-[href*="index"]::after{
+.text::after{
 	content:'New';
 	position: absolute;
 	color:red;
@@ -93,6 +144,30 @@ ol a:hover{
 	right:5px;
 	font-size: 15px;
 }
+.blocks li:nth-child(even){
+	background-color:#f2f2f2 ;
+}
+.box-work{
+	padding:10px;
+}
+.box-work p::first-letter{
+	color: black;
+}
+
+button{
+	float: right;
+}
+
+.btn-primary{
+	background-color: #fff;
+	color: #98ddfd;
+	border-color: #98ddfd;
+	border-radius: 0;
+}
+.btn-primary:hover{
+	background-color: #9fd8fb;
+	border-color: #89cffa;
+}
 @media screen {
 	.tm-banner{
 		padding: 0;
@@ -109,63 +184,5 @@ border-color: #87cefa transparent transparent transparent;
 position: absolute;
 }
 
-@media print {
-	.tm-sidebar,
-	#about,
-	.heading,
-	.blocks,
-	section.tm-content-box,
-	#ideas
-	{
-		display:none;
-	}
-	body{
-		background-color:white;
-	}
-	.container {
-		display: flex;
-		max-width: 740px;
-		min-height: 100vh;
-		justify-content: center;
-	}
-	
-	
-	.tm-content-box{
-		margin-bottom: 0;
-	}
-	.tm-banner{
-		padding: 0;
-		width: 510px;
-	}
-	.flex-2-col{
-		display: flex;
-       
-	}
-	
-	.flex-2-col img{
-		margin-top: 110px;
-		margin-left: 50px;
-		width: 170px;
-		height:170px;
-	}
-	
-	.padding-medium {
-		padding: 40px 0 0 40px;
-	}
-	p{
-		text-indent:25px;
-		/* word-wrap: break-all;  */
-	
-	}
-	.tm-section-description{
-		width: 270px;
-	}
-	.tm-footer{
-		display: flex;
-		margin-left: 50px;
-		padding-top: 30px;
-	}
-	
-}
 
 }
