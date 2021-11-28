@@ -1,1 +1,3 @@
-First push to master branch from ubuntu server
+Changed in branc task_1254
+added line
+Second line
